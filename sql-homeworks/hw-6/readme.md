@@ -1,49 +1,53 @@
-# SQL ÇALIÞMASI ÖDEV-6
+# SQL Ã‡ALIÅžMASI Ã–DEV-6
 ---
-## Ýstenilen : 
+## Ä°stenilen : 
 
-Aþaðýdaki sorgu senaryolarýný dvdrental örnek veri tabaný üzerinden gerçekleþtiriniz:
+AÅŸaÄŸÄ±daki sorgu senaryolarÄ±nÄ± dvdrental Ã¶rnek veri tabanÄ± Ã¼zerinden gerÃ§ekleÅŸtiriniz:
 
-1- Film tablosunda bulunan rental_rate sütunundaki deðerlerin ortalamasý nedir?
+1- Film tablosunda bulunan rental_rate sÃ¼tunundaki deÄŸerlerin ortalamasÄ± nedir?
 
 
 ```sql
 SELECT ROUND(AVG(rental_rate),2) FROM film;
 ```
 
-**Çýktý:**
+**Ã‡Ä±ktÄ±:**
+![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/2d477047-da43-4d22-a03e-7418b1c20d2c)
 
 
-2-Film tablosunda bulunan filmlerden kaç tanesi 'C' karakteri ile baþlar?
+2-Film tablosunda bulunan filmlerden kaÃ§ tanesi 'C' karakteri ile baÅŸlar?
 
 ```sql
 SELECT COUNT(title) FROM film WHERE title LIKE 'C%';
 ```
 
-**Çýktý:**
+**Ã‡Ä±ktÄ±:**
+![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/1aa6436e-f1c3-4d1a-bc06-8ce3879d06e6)
 
 
-3-Film tablosunda bulunan filmlerden rental_rate deðeri 0.99 a eþit olan en uzun (length) film kaç dakikadýr?
+3-Film tablosunda bulunan filmlerden rental_rate deÄŸeri 0.99 a eÅŸit olan en uzun (length) film kaÃ§ dakikadÄ±r?
 
 
 ```sql
 SELECT MAX(length) FROM film WHERE rental_rate=0.99 LIMIT 1;
 ```
 
-**Çýktý:**
+**Ã‡Ä±ktÄ±:**
+![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/3da9a46a-7c6e-48b3-9fb6-51ecac1866e7)
 
-4-Film tablosunda bulunan filmlerin uzunluðu 150 dakikadan büyük olanlarýna ait kaç farklý replacement_cost deðeri vardýr?
+4-Film tablosunda bulunan filmlerin uzunluÄŸu 150 dakikadan bÃ¼yÃ¼k olanlarÄ±na ait kaÃ§ farklÄ± replacement_cost deÄŸeri vardÄ±r?
 
 
 ```sql
 SELECT COUNT(DISTINCT replacement_cost) FROM film WHERE film.length>150 ;
 ```
 
-**Çýktý:**
+**Ã‡Ä±ktÄ±:**
+![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/93aba6a5-ac5e-4ee5-ad6d-97b0e24c8023)
 
 ---
 
-## Kullanýlan Teknolojiler:
+## KullanÄ±lan Teknolojiler:
 
 -  Postgresql
-- [**dvdrental** örnek veritabaný](https://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip) 
+- [**dvdrental** Ã¶rnek veritabanÄ±](https://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip) 
