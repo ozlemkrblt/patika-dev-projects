@@ -1,9 +1,55 @@
-Merhabalar,
+# SQL Ã‡ALIÅMASI Ã–DEV-3
+---
+## Ä°stenilen : 
 
-Aşağıdaki sorgu senaryolarını dvdrental örnek veri tabanı üzerinden gerçekleştiriniz.
+AÅŸaÄŸÄ±daki sorgu senaryolarÄ±nÄ± dvdrental Ã¶rnek veri tabanÄ± Ã¼zerinden gerÃ§ekleÅŸtiriniz:
 
-country tablosunda bulunan country sütunundaki ülke isimlerinden 'A' karakteri ile başlayıp 'a' karakteri ile sonlananları sıralayınız.
-country tablosunda bulunan country sütunundaki ülke isimlerinden en az 6 karakterden oluşan ve sonu 'n' karakteri ile sonlananları sıralayınız.
-film tablosunda bulunan title sütunundaki film isimlerinden en az 4 adet büyük ya da küçük harf farketmesizin 'T' karakteri içeren film isimlerini sıralayınız.
-film tablosunda bulunan tüm sütunlardaki verilerden title 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve rental_rate 2.99 olan verileri sıralayınız.
-Kolay Gelsin.
+1- Country tablosunda bulunan country sÃ¼tunundaki Ã¼lke isimlerinden 'A' karakteri ile baÅŸlayÄ±p 'a' karakteri ile sonlananlarÄ± sÄ±ralayÄ±nÄ±z.
+
+```sql
+SELECT country FROM Country WHERE country LIKE 'A%a';
+```
+
+**Ã‡Ä±ktÄ±:**
+
+![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/ac25b5cc-c150-459d-a124-1f61af33539f)
+
+
+2-Country tablosunda bulunan country sÃ¼tunundaki Ã¼lke isimlerinden en az 6 karakterden oluÅŸan ve sonu 'n' karakteri ile sonlananlarÄ± sÄ±ralayÄ±nÄ±z.
+
+```sql
+SELECT country FROM Country WHERE country LIKE '_____%n';
+```
+
+**Ã‡Ä±ktÄ±:**
+
+![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/e4012814-4be1-4029-b872-e0b979dedfe1)
+
+
+3-Film tablosunda bulunan title sÃ¼tunundaki film isimlerinden en az 4 adet bÃ¼yÃ¼k ya da kÃ¼Ã§Ã¼k harf farketmesizin 'T' karakteri iÃ§eren film isimlerini sÄ±ralayÄ±nÄ±z.
+
+```sql
+SELECT title FROM film WHERE title ILIKE '%t%t%t%t%';
+```
+
+**Ã‡Ä±ktÄ±:**
+
+![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/cef2ad24-70a6-4b3d-b992-246a795f8bc0)
+
+
+4-Film tablosunda bulunan tÃ¼m sÃ¼tunlardaki verilerden title 'C' karakteri ile baÅŸlayan ve uzunluÄŸu (length) 90 dan bÃ¼yÃ¼k olan ve rental_rate 2.99 olan verileri sÄ±ralayÄ±nÄ±z.
+
+```sql
+SELECT title,length,rental_rate FROM film WHERE title LIKE 'C%' AND length >90 AND rental_rate = 2.99 ;
+```
+
+**Ã‡Ä±ktÄ±:**
+
+![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/83190280-bd1b-4baa-b4cd-b0a9b6ac0172)
+
+---
+
+## KullanÄ±lan Teknolojiler:
+
+-  Postgresql
+- [**dvdrental** Ã¶rnek veritabanÄ±](https://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip) 
