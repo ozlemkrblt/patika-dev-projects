@@ -1,7 +1,49 @@
-1. film tablosunda bulunan tüm sütunlardaki verileri replacement cost değeri 12.99 dan büyük eşit ve 16.99 küçük olma koşuluyla sıralayınız ( BETWEEN - AND yapısını kullanınız.)
 
-2. actor tablosunda bulunan first_name ve last_name sütunlardaki verileri first_name 'Penelope' veya 'Nick' veya 'Ed' değerleri olması 
-koşuluyla sıralayınız. ( IN operatörünü kullanınız.)
+# SQL Ã‡ALIÅMASI Ã–DEV-2
+---
+## Ä°stenilen : 
+
+AÅŸaÄŸÄ±daki sorgu senaryolarÄ±nÄ± dvdrental Ã¶rnek veri tabanÄ± Ã¼zerinden gerÃ§ekleÅŸtiriniz:
+
+1- Film tablosunda bulunan tÃ¼m sÃ¼tunlardaki verileri replacement cost deÄŸeri 12.99 dan bÃ¼yÃ¼k eÅŸit ve 16.99 kÃ¼Ã§Ã¼k olma koÅŸuluyla sÄ±ralayÄ±nÄ±z ( BETWEEN - AND yapÄ±sÄ±nÄ± kullanÄ±nÄ±z.)
+
+```sql
+SELECT * FROM Film WHERE replacement_cost BETWEEN 12.99 AND 16.99;
+```
+
+**Ã‡Ä±ktÄ±:**
+
+![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/0feb4a37-2341-4eb5-9760-5d400f924bf9)
 
 
-3.film tablosunda bulunan tüm sütunlardaki verileri rental_rate 0.99, 2.99, 4.99 VE replacement_cost 12.99, 15.99, 28.99 olma koşullarıyla sıralayınız. ( IN operatörünü kullanınız.)
+2-Actor tablosunda bulunan first_name ve last_name sÃ¼tunlardaki verileri first_name 'Penelope' veya 'Nick' veya 'Ed' deÄŸerleri olmasÄ± 
+koÅŸuluyla sÄ±ralayÄ±nÄ±z. ( IN operatÃ¶rÃ¼nÃ¼ kullanÄ±nÄ±z.)
+
+```sql
+SELECT first_name,last_name FROM actor WHERE first_name IN ('Penelope','Nick','Ed');
+```
+
+**Ã‡Ä±ktÄ±:**
+
+![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/b6eae306-f6d7-43c8-ac13-b0574b93f282)
+
+
+3-Film tablosunda bulunan tÃ¼m sÃ¼tunlardaki verileri rental_rate 0.99, 2.99, 4.99 VE replacement_cost 12.99, 15.99, 28.99 olma koÅŸullarÄ±yla sÄ±ralayÄ±nÄ±z. ( IN operatÃ¶rÃ¼nÃ¼ kullanÄ±nÄ±z.)
+
+
+```sql
+SELECT * FROM Film WHERE replacement_cost IN (12.99, 15.99,28.99) AND rental_rate IN (0.99,2.99,4.99) ;
+```
+
+**Ã‡Ä±ktÄ±:**
+
+![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/de807c52-d787-4909-8ce7-02a9727e7c2e)
+
+
+
+---
+
+## KullanÄ±lan Teknolojiler:
+
+-  Postgresql
+- [**dvdrental** Ã¶rnek veritabanÄ±](https://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip) 
