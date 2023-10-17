@@ -1,0 +1,49 @@
+# SQL ÇALIÞMASI ÖDEV-6
+---
+## Ýstenilen : 
+
+Aþaðýdaki sorgu senaryolarýný dvdrental örnek veri tabaný üzerinden gerçekleþtiriniz:
+
+1- Film tablosunda bulunan rental_rate sütunundaki deðerlerin ortalamasý nedir?
+
+
+```sql
+SELECT ROUND(AVG(rental_rate),2) FROM film;
+```
+
+**Çýktý:**
+
+
+2-Film tablosunda bulunan filmlerden kaç tanesi 'C' karakteri ile baþlar?
+
+```sql
+SELECT COUNT(title) FROM film WHERE title LIKE 'C%';
+```
+
+**Çýktý:**
+
+
+3-Film tablosunda bulunan filmlerden rental_rate deðeri 0.99 a eþit olan en uzun (length) film kaç dakikadýr?
+
+
+```sql
+SELECT MAX(length) FROM film WHERE rental_rate=0.99 LIMIT 1;
+```
+
+**Çýktý:**
+
+4-Film tablosunda bulunan filmlerin uzunluðu 150 dakikadan büyük olanlarýna ait kaç farklý replacement_cost deðeri vardýr?
+
+
+```sql
+SELECT COUNT(DISTINCT replacement_cost) FROM film WHERE film.length>150 ;
+```
+
+**Çýktý:**
+
+---
+
+## Kullanýlan Teknolojiler:
+
+-  Postgresql
+- [**dvdrental** örnek veritabaný](https://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip) 
