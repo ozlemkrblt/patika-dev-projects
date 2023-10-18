@@ -1,4 +1,4 @@
-![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/5b812e89-acee-4071-a15a-238fda5c392b)# SQL ÇALIÞMASI ÖDEV-12
+# SQL ÇALIŞMASI ÖDEV-12
 ---
 ## İstenilen : 
 
