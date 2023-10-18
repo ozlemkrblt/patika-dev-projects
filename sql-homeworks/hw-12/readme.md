@@ -1,53 +1,52 @@
-# SQL ÇALIŞMASI ÖDEV-12
+![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/5b812e89-acee-4071-a15a-238fda5c392b)# SQL Ã‡ALIÃMASI Ã–DEV-12
 ---
-## İstenilen : 
+## Ä°stenilen : 
 
-Aşağıdaki sorgu senaryolarını dvdrental örnek veri tabanı üzerinden gerçekleştiriniz:
+AÅŸaÄŸÄ±daki sorgu senaryolarÄ±nÄ± dvdrental Ã¶rnek veri tabanÄ± Ã¼zerinden gerÃ§ekleÅŸtiriniz:
 
-1- Film tablosunda film uzunluğu length sütununda gösterilmektedir. Uzunluğu ortalama film uzunluğundan fazla kaç tane film vardır?
-
+1- Film tablosunda film uzunluÃ°u length sÃ¼tununda gÃ¶sterilmektedir. UzunluÄŸu ortalama film uzunluÄŸundan fazla kaÃ§ tane film vardÄ±r?
 
 ```sql
 SELECT COUNT(*) FROM film WHERE film.length > (SELECT AVG(film.length) FROM film);
 ```
 
-**Çıktı:**
+**Ã‡Ä±ktÄ±:**
 
+![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/341fc475-4617-477c-96ec-6fcdc9573c29)
 
-
-2- Film tablosunda en yüksek rental_rate değerine sahip kaç tane film vardır?
+2- Film tablosunda en yÃ¼ksek rental_rate deÃ°erine sahip kaÃ§ tane film vardÃ½r?
 
 ```sql
 SELECT COUNT(*) FROM film WHERE rental_rate = (SELECT MAX(rental_rate) FROM film);
 ```
 
-**Çıktı:**
+**Ã‡Ä±ktÄ±:**
 
+![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/c534f4e2-c788-4e7c-9e6a-0a0ccf745810)
 
-
-3- Film tablosunda en düşük rental_rate ve en düşün replacement_cost değerlerine sahip filmleri sıralayınız.
-
-
+3- Film tablosunda en dÃ¼ÅŸÃ¼k rental_rate ve en dÃ¼Ã¾Ã¼n replacement_cost deÄŸerlerine sahip filmleri sÄ±ralayÄ±nÄ±z.
 
 ```sql
 SELECT rental_rate,replacement_cost FROM film WHERE rental_rate = (SELECT MIN(rental_rate) FROM film) AND replacement_cost = (SELECT MIN(replacement_cost) FROM film);
 ```
 
-**Çıktı:**
+**Ã‡Ä±ktÄ±:**
 
-4- Payment tablosunda en fazla sayıda alışveriş yapan müşterileri(customer) sıralayınız.
+![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/5454aa67-ce32-4f83-a80f-b8c01cc99193)
 
+4- Payment tablosunda en fazla sayÄ±da alÄ±ÅŸveriÅŸ yapan mÃ¼ÅŸterileri(customer) sÄ±ralayÄ±nÄ±z.
 
 ```sql
 SELECT customer_id, COUNT(*) AS total_transactions FROM payment GROUP BY customer_id ORDER BY total_transactions DESC;
 ```
 
-**Çıktı:**
+**Ã‡Ä±ktÄ±:**
 
+![image](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/8813c617-d056-4d3c-aea0-175322638dad)
 
 ---
 
-## Kullanılan Teknolojiler:
+## KullanÄ±lan Teknolojiler:
 
 -  Postgresql
-- [**dvdrental** örnek veritabanı](https://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip) 
+- [**dvdrental** Ã¶rnek veritabanÃ½](https://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip) 
