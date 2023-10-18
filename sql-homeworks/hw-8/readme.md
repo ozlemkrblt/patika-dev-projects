@@ -162,7 +162,6 @@ Sonra:
 ![t4 5 2](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/a6b966e8-0bef-4529-9060-f61b053a098d)
 
 ---
-
 ## Kullanılan Teknolojiler:
 
 -  Postgresql
