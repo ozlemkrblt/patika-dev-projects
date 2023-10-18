@@ -127,26 +127,38 @@ SELECT * FROM employee;
 
 2.
 Önce: 
+
 ![t4 2](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/ecbbb6f5-b4e8-4775-b6e4-f3885dc5d51b)
+
 Sonra:
+
 ![t4 2 2](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/b6dba7e2-0eaf-4423-bdc9-8eab353e1829)
 
 3. 
 Önce: 
+
 ![t4 3 1](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/3111c14e-a471-4fa5-8ca2-94c3c05858f3)
+
 Sonra:
+
 ![t4 3 2](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/b1d17713-f919-4ca5-baa7-271ea6ab455b)
 
 4.
 Önce:
+
 ![t4 4 1](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/7d7ffdb5-f8e4-460d-ad8a-1e340e3db89c)
+
 Sonra:
+
 ![t4 4 2](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/535b0de7-ac9d-456b-8f26-08105bb0f6b1)
 
 5.
 Önce: 
+
 ![t4 5 1](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/fddcee6f-7873-4fa5-9ff2-3ebcd72eb880)
+
 Sonra:
+
 ![t4 5 2](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/a6b966e8-0bef-4529-9060-f61b053a098d)
 
 ---
