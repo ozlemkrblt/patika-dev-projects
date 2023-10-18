@@ -1,4 +1,4 @@
-# SQL ÇALIŞMASI ÖDEV-8
+﻿# SQL ÇALIŞMASI ÖDEV-8
 ---
 ## İstenilen : 
 
