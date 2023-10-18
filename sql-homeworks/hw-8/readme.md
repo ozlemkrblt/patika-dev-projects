@@ -1,10 +1,10 @@
-# SQL ÇALIÞMASI ÖDEV-8
+# SQL Ã‡ALIÅžMASI Ã–DEV-8
 ---
-## Ýstenilen : 
+## Ä°stenilen : 
 
-Aþaðýdaki sorgu senaryolarýný dvdrental örnek veri tabaný üzerinden gerçekleþtiriniz:
+Asagidaki sorgu senaryolarÄ±nÄ± dvdrental Ã¶rnek veri tabanÄ± Ã¼zerinden gerÃ§ekleÃ¾tiriniz:
 
-1- Test veritabanýnýzda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluþturalým.
+1- Test veritabanÄ±nÄ±zda *employee* isimli sÃ¼tun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluÅŸturalÄ±m.
 
 
 
@@ -17,10 +17,11 @@ CREATE TABLE employee (
 );
 ```
 
-**Çýktý:**
+**Ã‡Ä±ktÄ±:**
+![t1](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/5c7ed428-8d72-4112-921c-ef74b199d154)
 
 
-2-Oluþturduðumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+2-OluÃ¾turduÄŸumuz *employee* tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
 .
 
 ```sql
@@ -80,10 +81,13 @@ insert into employee (id, name, birthday, email) values (50, 'Ewen Alldread', '1
 SELECT * FROM employee;
 ```
 
-**Çýktý:**
+**Ã‡Ä±ktÄ±:**
+
+![t2](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/7d9d10d8-a9dd-4557-9407-36edb761b799)
+![t2 1](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/66b2bcc5-3aac-49b7-adb2-8440953260a7)
 
 
-3-Sütunlarýn her birine göre diðer sütunlarý güncelleyecek 5 adet UPDATE iþlemi yapalým.
+3-SÃ¼tunlarÄ±n her birine gÃ¶re diÄŸer sÃ¼tunlarÄ± gÃ¼ncelleyecek 5 adet UPDATE iÅŸlemi yapalÄ±m.
 
 
 ```sql
@@ -97,9 +101,12 @@ SELECT * FROM employee;
 
 ```
 
-**Çýktý:**
+**Ã‡Ä±ktÄ±:**
+![t3](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/9c17e302-53cc-4621-abb0-12ca259b89a2)
 
-4-Sütunlarýn her birine göre ilgili satýrý silecek 5 adet DELETE iþlemi yapalým.
+![t3 1](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/df1b7d70-650e-4d93-9604-0bdc1f12cf3e)
+
+4-SÃ¼tunlarÄ±n her birine gÃ¶re ilgili satÄ±rÄ± silecek 5 adet DELETE iÅŸlemi yapalÄ±m.
 
 ```sql
 DELETE FROM employee WHERE id IN(24,12,11);
@@ -115,13 +122,36 @@ DELETE FROM employee WHERE id = 50;
 SELECT * FROM employee;
 
 ```
-**Çýktý:**
+**Ã‡Ä±ktÄ±:**
+1.  ![t4 1](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/373b70b9-2726-4b99-82cd-f84dddc4e7d3)
 
+2.
+Ã–nce: 
+![t4 2](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/ecbbb6f5-b4e8-4775-b6e4-f3885dc5d51b)
+Sonra:
+![t4 2 2](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/b6dba7e2-0eaf-4423-bdc9-8eab353e1829)
 
+3. 
+Ã–nce: 
+![t4 3 1](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/3111c14e-a471-4fa5-8ca2-94c3c05858f3)
+Sonra:
+![t4 3 2](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/b1d17713-f919-4ca5-baa7-271ea6ab455b)
+
+4.
+Ã–nce:
+![t4 4 1](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/7d7ffdb5-f8e4-460d-ad8a-1e340e3db89c)
+Sonra:
+![t4 4 2](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/535b0de7-ac9d-456b-8f26-08105bb0f6b1)
+
+5.
+Ã–nce: 
+![t4 5 1](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/fddcee6f-7873-4fa5-9ff2-3ebcd72eb880)
+Sonra:
+![t4 5 2](https://github.com/ozlemkrblt/patika-dev-projects/assets/46456721/a6b966e8-0bef-4529-9060-f61b053a098d)
 
 ---
 
-## Kullanýlan Teknolojiler:
+## KullanÄ±lan Teknolojiler:
 
 -  Postgresql
 - [Mockaroo.com](https://www.mockaroo.com/) 
